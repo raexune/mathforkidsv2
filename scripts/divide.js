@@ -12,7 +12,17 @@ function generateEquation() {
     let allAnswers = [];
     let switchAnswers = [];
 
+    if (num2 > num1) {
+        placeHolder = num2;
+        num2 = num1;
+        num1 = placeHolder;
+    }
+
+
     answer = num1 / num2;
+
+
+
 
     document.getElementById("num1").innerHTML = num1;
     document.getElementById("num2").innerHTML = num2;
