@@ -1,0 +1,131 @@
+:root {
+  --red: #FF6B6B;
+  --yellow: #FFD93D;
+  --blue: #4D96FF;
+  --green: #6BCB77;
+  --gray: #444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Luckiest Guy", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10rem;
+  background-color: var(--red);
+  color: #fff;
+  height: 10vh;
+}
+
+nav span {
+  font-size: 3.4rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+nav ul li {
+  margin-right: 4rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(3 * 1fr);
+  height: 90vh;
+  gap: 2rem;
+  padding: 2rem 2rem;
+  background-color: #eee;
+}
+
+.container>* {
+  border-radius: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 6.5rem;
+}
+
+.equation {
+  background-color: #fff;
+  grid-row-start: 1;
+  grid-row-end: span 3;
+}
+
+.equation-1 {
+  color: var(--red);
+}
+
+.equation-2 {
+  color: var(--blue);
+}
+
+.equation-3 {
+  color: var(--yellow);
+}
+
+.equation-4 {
+  color: var(--red);
+}
+
+.equation-5 {
+  color: var(--gray);
+}
+
+.solution-1 {
+  background-color: var(--red);
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.solution-2 {
+  background-color: var(--blue);
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.solution-3 {
+  background-color: var(--yellow);
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.solution-1:hover {
+  transform: scale(95%);
+}
+
+.solution-2:hover {
+  transform: scale(95%);
+}
+
+.solution-3:hover {
+  transform: scale(95%);
+}
+
+.current {
+  border-bottom: 4px solid #fff;
+}
